@@ -28,11 +28,11 @@ function _drupal_ai_content_impact_analyzer_check(EntityInterface $entity) {
   if ($entity->getEntityTypeId() !== 'node' || !$entity->hasField('body')) {
     return;
   }
-  
+
   // Just log it on save for now.
   $text = $entity->get('body')->value;
   /** @var \Drupal\ai_content_impact_analyzer\Service\ImpactScorer $scorer */
-  $scorer = \Drupal::service('ai_content_impact_analyzer.scorer');
+  $scorer = \Drupal::service('ai_content_impact_analyzer.impact_scorer');
   $result = $scorer->calculateScore($text ?? '');
 
   \Drupal::logger('ai_content_impact_analyzer')->info('Node @id saved. Impact: @summary (@score)', [

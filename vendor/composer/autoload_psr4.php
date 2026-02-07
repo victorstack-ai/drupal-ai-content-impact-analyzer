@@ -96,6 +96,8 @@ return array(
     'GPBMetadata\\Google\\Protobuf\\' => array($vendorDir . '/google/protobuf/src/GPBMetadata/Google/Protobuf'),
     'Egulias\\EmailValidator\\' => array($vendorDir . '/egulias/email-validator/src'),
     'Drupal\\ai_content_impact_analyzer\\' => array($baseDir . '/src'),
+    'Drupal\\Tests\\ai_content_impact_analyzer\\' => array($baseDir . '/tests/src'),
+    'Drupal\\Tests\\' => array($vendorDir . '/drupal/core/tests/Drupal/Tests'),
     'Drupal\\Core\\' => array($vendorDir . '/drupal/core/lib/Drupal/Core'),
     'Drupal\\Composer\\Plugin\\Scaffold\\' => array($vendorDir . '/drupal/core-composer-scaffold'),
     'Drupal\\Component\\' => array($vendorDir . '/drupal/core/lib/Drupal/Component'),

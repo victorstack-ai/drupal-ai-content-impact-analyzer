@@ -14,6 +14,12 @@
       "Drupal\\ai_content_impact_analyzer\\": "src/"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Drupal\\Tests\\": "vendor/drupal/core/tests/Drupal/Tests/",
+      "Drupal\\Tests\\ai_content_impact_analyzer\\": "tests/src/"
+    }
+  },
   "config": {
     "allow-plugins": {
       "drupal/core-composer-scaffold": true,

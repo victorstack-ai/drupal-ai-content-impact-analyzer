@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'drupal/ai_content_impact_analyzer',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'eb3c1115409891d8d1f01a87d89e930d5d23be8c',
         'type' => 'drupal-module',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -170,9 +170,9 @@
             'dev_requirement' => false,
         ),
         'drupal/ai_content_impact_analyzer' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'eb3c1115409891d8d1f01a87d89e930d5d23be8c',
             'type' => 'drupal-module',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

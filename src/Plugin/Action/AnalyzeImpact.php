@@ -51,7 +51,7 @@ class AnalyzeImpact extends ActionBase implements ContainerFactoryPluginInterfac
       $configuration,
       $plugin_id,
       $plugin_definition,
-      $container->get('ai_content_impact_analyzer.scorer')
+      $container->get('ai_content_impact_analyzer.impact_scorer')
     );
   }
 
@@ -65,8 +65,8 @@ class AnalyzeImpact extends ActionBase implements ContainerFactoryPluginInterfac
 
     $text = $entity->get('body')->value;
     $result = $this->scorer->calculateScore($text ?? '');
-    
-    \Drupal::messenger()->addMessage(t('AI Impact Analysis: @summary (Score: @score)', [
+
+    $this->messenger()->addMessage($this->t('AI Impact Analysis: @summary (Score: @score)', [
       '@summary' => $result['summary'],
       '@score' => $result['score'],
     ]));
@@ -75,7 +75,7 @@ class AnalyzeImpact extends ActionBase implements ContainerFactoryPluginInterfac
   /**
    * {@inheritdoc}
    */
-  public function access($object, AccountInterface $account = NULL, $return_as_object = FALSE) {
+  public function access($object, ?AccountInterface $account = NULL, $return_as_object = FALSE) {
     return $object->access('update', $account, $return_as_object);
   }
 

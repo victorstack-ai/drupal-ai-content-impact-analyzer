@@ -1,0 +1,7 @@
+ai_content_impact_analyzer.dashboard:
+  path: '/admin/config/ai/impact-analyzer'
+  defaults:
+    _controller: '\Drupal\ai_content_impact_analyzer\Controller\DashboardController::build'
+    _title: 'AI Content Impact Analyzer'
+  requirements:
+    _permission: 'administer site configuration'

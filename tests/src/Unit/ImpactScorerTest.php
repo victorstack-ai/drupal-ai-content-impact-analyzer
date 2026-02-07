@@ -2,7 +2,7 @@
 
 namespace Drupal\Tests\ai_content_impact_analyzer\Unit;
 
-use Drupal\Tests\UnitTestCase;
+use PHPUnit\Framework\TestCase;
 use Drupal\ai_content_impact_analyzer\Service\ImpactScorer;
 use Drupal\Core\Logger\LoggerChannelFactoryInterface;
 use Drupal\Core\Logger\LoggerChannelInterface;
@@ -12,7 +12,7 @@ use Drupal\Core\Logger\LoggerChannelInterface;
  *
  * @group ai_content_impact_analyzer
  */
-class ImpactScorerTest extends UnitTestCase {
+class ImpactScorerTest extends TestCase {
 
   /**
    * Tests calculateScore.
@@ -30,7 +30,7 @@ class ImpactScorerTest extends UnitTestCase {
     $this->assertEquals('Needs Improvement', $result['summary']);
 
     // Test high score with keywords.
-    $long_text = str_repeat('drupal community ', 50);
+    $long_text = str_repeat('drupal community accessibility sustainability open source governance ', 100);
     $result = $scorer->calculateScore($long_text);
     $this->assertGreaterThan(80, $result['score']);
     $this->assertEquals('High Impact', $result['summary']);

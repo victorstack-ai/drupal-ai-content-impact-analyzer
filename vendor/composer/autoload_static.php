@@ -185,6 +185,8 @@ class ComposerStaticInit83fdbfcc79112ddcb6522c948e2c1f59
         'D' => 
         array (
             'Drupal\\ai_content_impact_analyzer\\' => 34,
+            'Drupal\\Tests\\ai_content_impact_analyzer\\' => 40,
+            'Drupal\\Tests\\' => 13,
             'Drupal\\Core\\' => 12,
             'Drupal\\Composer\\Plugin\\Scaffold\\' => 32,
             'Drupal\\Component\\' => 17,
@@ -584,6 +586,14 @@ class ComposerStaticInit83fdbfcc79112ddcb6522c948e2c1f59
         'Drupal\\ai_content_impact_analyzer\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
+        ),
+        'Drupal\\Tests\\ai_content_impact_analyzer\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/tests/src',
+        ),
+        'Drupal\\Tests\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/drupal/core/tests/Drupal/Tests',
         ),
         'Drupal\\Core\\' => 
         array (

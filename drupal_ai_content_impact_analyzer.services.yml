@@ -1,4 +1,4 @@
 services:
-  ai_content_impact_analyzer.scorer:
+  ai_content_impact_analyzer.impact_scorer:
     class: Drupal\ai_content_impact_analyzer\Service\ImpactScorer
     arguments: ['@logger.factory']

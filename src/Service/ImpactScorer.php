@@ -39,14 +39,23 @@ class ImpactScorer {
     // In a real hackathon project, this would call Mistral AI via an API.
     // Here we simulate it based on text length and keywords.
     $word_count = str_word_count(strip_tags($text));
-    $score = min(100, max(0, $word_count / 5)); // Simple heuristic.
+    // Simple heuristic.
+    $score = min(100, max(0, $word_count / 5));
 
     // Bonus for "impact" words.
-    if (stripos($text, 'community') !== FALSE) {
-      $score += 10;
-    }
-    if (stripos($text, 'drupal') !== FALSE) {
-      $score += 10;
+    $impact_keywords = [
+      'community' => 10,
+      'drupal' => 10,
+      'accessibility' => 15,
+      'sustainability' => 15,
+      'open source' => 10,
+      'governance' => 5,
+    ];
+
+    foreach ($impact_keywords as $keyword => $bonus) {
+      if (stripos($text, $keyword) !== FALSE) {
+        $score += $bonus;
+      }
     }
 
     $score = min(100, $score);
