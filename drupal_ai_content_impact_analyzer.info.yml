@@ -1,0 +1,7 @@
+name: 'AI Content Impact Analyzer'
+type: module
+description: 'Analyzes content impact using AI models (simulated), inspired by the Drupal AI Hackathon 2026.'
+package: AI
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:node

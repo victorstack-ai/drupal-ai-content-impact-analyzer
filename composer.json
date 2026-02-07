@@ -1,0 +1,24 @@
+{
+  "name": "drupal/ai_content_impact_analyzer",
+  "type": "drupal-module",
+  "description": "AI-assisted editorial tool to score content impact, inspired by the 2026 Drupal AI Hackathon.",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "drupal/core": "^10 || ^11"
+  },
+  "require-dev": {
+    "drupal/core-dev": "^10 || ^11"
+  },
+  "autoload": {
+    "psr-4": {
+      "Drupal\\ai_content_impact_analyzer\\": "src/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "drupal/core-composer-scaffold": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "phpstan/extension-installer": true
+    }
+  }
+}
