@@ -3,7 +3,7 @@
         'name' => 'drupal/ai_content_impact_analyzer',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'eb3c1115409891d8d1f01a87d89e930d5d23be8c',
+        'reference' => '2cb93e69777c3c039479f9eae72349fa0f6cc02d',
         'type' => 'drupal-module',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -172,7 +172,7 @@
         'drupal/ai_content_impact_analyzer' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'eb3c1115409891d8d1f01a87d89e930d5d23be8c',
+            'reference' => '2cb93e69777c3c039479f9eae72349fa0f6cc02d',
             'type' => 'drupal-module',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

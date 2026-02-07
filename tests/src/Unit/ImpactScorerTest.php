@@ -3,15 +3,15 @@
 namespace Drupal\Tests\ai_content_impact_analyzer\Unit;
 
 use PHPUnit\Framework\TestCase;
+use PHPUnit\Framework\Attributes\Group;
 use Drupal\ai_content_impact_analyzer\Service\ImpactScorer;
 use Drupal\Core\Logger\LoggerChannelFactoryInterface;
 use Drupal\Core\Logger\LoggerChannelInterface;
 
 /**
  * Tests the ImpactScorer service.
- *
- * @group ai_content_impact_analyzer
  */
+#[Group('ai_content_impact_analyzer')]
 class ImpactScorerTest extends TestCase {
 
   /**
